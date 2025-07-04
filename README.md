@@ -2,6 +2,8 @@
 
 A DMA enabled SPI driver for ILI9341 LCDs. This driver code for communicating with SPI connected ILI9341 LCD devices on the Teensy 4.x
 
+This library relies on https://github.com/codewitch-honey-crisis/lcd_spi_driver_t4
+
 ```cpp
 #include <Arduino.h>
 #include "ili9341_t4.hpp"
