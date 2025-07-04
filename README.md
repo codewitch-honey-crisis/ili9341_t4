@@ -8,8 +8,8 @@ A DMA enabled SPI driver for ILI9341 LCDs. This driver code for communicating wi
 #include "lvgl.h"
 
 // Screen dimension
-const byte SCREEN_WIDTH = 128;
-const byte SCREEN_HEIGHT = 128;
+const byte SCREEN_WIDTH = 240;
+const byte SCREEN_HEIGHT = 320;
 
 // Pins
 const byte CS_PIN = 10; // for CS1: 38
@@ -18,7 +18,7 @@ const byte RST_PIN = 9;
 const byte DIN_PIN = 11; // for MOSI1: 26
 const byte CLK_PIN = 13; // for SCK1: 27
 ili9341_t4 lcd(CS_PIN,DC_PIN,RST_PIN);
-static constexpr const size_t lcd_transfer_buffer_size = (128*128*2)/10;
+static constexpr const size_t lcd_transfer_buffer_size = (240*320*2)/10;
 static void* lcd_transfer_buffer1 = nullptr;
 static void* lcd_transfer_buffer2 = nullptr;
 
