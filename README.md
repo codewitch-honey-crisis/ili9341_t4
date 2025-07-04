@@ -19,6 +19,7 @@ const byte DC_PIN = 8;
 const byte RST_PIN = 9;
 const byte DIN_PIN = 11; // for MOSI1: 26
 const byte CLK_PIN = 13; // for SCK1: 27
+
 ili9341_t4 lcd(CS_PIN,DC_PIN,RST_PIN);
 static constexpr const size_t lcd_transfer_buffer_size = (240*320*2)/10;
 static void* lcd_transfer_buffer1 = nullptr;
